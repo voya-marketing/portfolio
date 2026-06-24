@@ -1,0 +1,12 @@
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Hanken Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-voya-black: #ffffff;
+  --color-voya-surface: #f7fbff;
+  --color-voya-panel: #ffffff;
+  --color-voya-border: rgba(0, 85, 255, 0.14);
+  --color-voya-muted: #64748b;
+  --color-voya-royal: #0055ff;
+  --color-voya-electric: #0077ff;
+}

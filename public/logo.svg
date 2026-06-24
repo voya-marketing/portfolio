@@ -1,0 +1,32 @@
+<svg viewBox="0 0 200 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VOYA Marketing">
+  <!-- Left upward arrow arm -->
+  <path d="M 20,12 L 52,12 L 52,42 L 66,42 L 48,12 L 80,12 L 100,90 L 80,90 Z" fill="#4A8FD4"/>
+  <!-- Right upward arrow arm (mirrored) -->
+  <path d="M 180,12 L 148,12 L 148,42 L 134,42 L 152,12 L 120,12 L 100,90 L 120,90 Z" fill="#4A8FD4"/>
+
+  <!-- V bottom tip -->
+  <polygon points="80,90 120,90 100,118" fill="#4A8FD4"/>
+
+  <!-- Horizontal bar -->
+  <rect x="16" y="124" width="168" height="11" rx="2" fill="#4A8FD4"/>
+
+  <!-- VOYA text -->
+  <text
+    x="100" y="160"
+    font-family="'Arial Black', 'Arial Bold', Arial, sans-serif"
+    font-size="26" font-weight="900"
+    fill="#E8D0A0"
+    text-anchor="middle"
+    letter-spacing="6"
+  >VOYA</text>
+
+  <!-- MARKETING text -->
+  <text
+    x="100" y="180"
+    font-family="Arial, sans-serif"
+    font-size="10.5" font-weight="700"
+    fill="#E8D0A0"
+    text-anchor="middle"
+    letter-spacing="6"
+  >MARKETING</text>
+</svg>
