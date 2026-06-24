@@ -19,7 +19,8 @@ export type ReelItem = {
   category: ReelCategory;
   duration: string;
   thumbnail: string;
-  youtubeId: string;
+  youtubeId?: string;
+  localUrl?: string;
   alt: string;
 };
 
@@ -367,5 +368,45 @@ export const reels: ReelItem[] = [
     youtubeId: "kZQ-F8gp7F4",
     thumbnail: yt("kZQ-F8gp7F4"),
     alt: "Trending Ration Cinematic reel thumbnail"
+  },
+  {
+    id: 35,
+    title: "DHURANDHAR",
+    slug: "meme-based-dhurandhar",
+    category: "Meme Based",
+    duration: "0:28",
+    localUrl: "/reels/videos/meme-based/meme-based-dhurandhar.mp4",
+    thumbnail: "",
+    alt: "DHURANDHAR reel thumbnail"
+  },
+  {
+    id: 36,
+    title: "Old Song Cinematic",
+    slug: "cinematic-old-song-cinematic",
+    category: "Cinematic",
+    duration: "0:18",
+    localUrl: "/reels/videos/cinematic/cinematic-old-song-cinematic.mp4",
+    thumbnail: "",
+    alt: "Old Song Cinematic reel thumbnail"
+  },
+  {
+    id: 37,
+    title: "Text Trend Plus Trending",
+    slug: "cinematic-text-trend-plus-trending",
+    category: "Cinematic",
+    duration: "0:23",
+    localUrl: "/reels/videos/cinematic/cinematic-text-trend-plus-trending.mp4",
+    thumbnail: "",
+    alt: "Text Trend Plus Trending reel thumbnail"
+  },
+  {
+    id: 38,
+    title: "Valentine Cinematic",
+    slug: "cinematic-valentine-cinematic",
+    category: "Cinematic",
+    duration: "0:22",
+    localUrl: "/reels/videos/cinematic/cinematic-valentine-cinematic.mp4",
+    thumbnail: "",
+    alt: "Valentine Cinematic reel thumbnail"
   }
 ];

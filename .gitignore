@@ -11,9 +11,31 @@ out/
 .env.local
 .env.*.local
 
-# Reel videos (served via YouTube — no need to host locally)
-public/reels/
+# Reel thumbnails and build output
+public/reels/thumbnails/
 dist/reels/
+
+# Reel videos served via YouTube (per category)
+public/reels/videos/grand-opening/
+public/reels/videos/montage/
+public/reels/videos/funny/
+public/reels/videos/music-based/
+public/reels/videos/ai-based-reel/
+public/reels/videos/conceptual-reels/
+public/reels/videos/speed-ramp/
+
+# Meme videos on YouTube (DHURANDHAR is local — kept)
+public/reels/videos/meme-based/meme-based-bat-jo-hai-usme.mp4
+public/reels/videos/meme-based/meme-based-hook-based.mp4
+public/reels/videos/meme-based/meme-based-munna-bhai-mbbs.mp4
+public/reels/videos/meme-based/meme-based-phir-hera-pheri.mp4
+public/reels/videos/meme-based/meme-based-tom-and-jerry.mp4
+public/reels/videos/meme-based/meme-based-trend-husho-haiy.mp4
+
+# Cinematic videos on YouTube or too large (3 local ones kept)
+public/reels/videos/cinematic/cinematic-malasian-rice-cinematic.mp4
+public/reels/videos/cinematic/cinematic-trend-plus-cinematic.mp4
+public/reels/videos/cinematic/cinematic-trending-ration-cinematic.mp4
 
 # Vite
 vite.config.ts.timestamp-*
