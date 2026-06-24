@@ -16,7 +16,7 @@ export default function PortfolioHero() {
           <p className="font-mono text-[11px] uppercase tracking-[0.32em] text-voya-electric">
             VOYA Marketing Portfolio
           </p>
-          <h1 className="mt-7 max-w-5xl font-display text-6xl font-black leading-[0.9] tracking-normal md:text-8xl lg:text-9xl">
+          <h1 className="mt-7 max-w-5xl font-display text-5xl font-black leading-[0.9] tracking-normal sm:text-6xl md:text-8xl lg:text-9xl">
             Cinematic marketing assets.
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-8 text-voya-muted">
@@ -32,7 +32,7 @@ export default function PortfolioHero() {
         </div>
 
         {/* Right — 3 media cards */}
-        <div className="flex gap-4 md:gap-5">
+        <div className="hidden md:flex md:gap-5">
           {/* Reel showcase — cycles all 39 reels */}
           <div className="w-[185px] shrink-0 md:w-[220px]">
             <div className="mt-16">

@@ -11,9 +11,9 @@ out/
 .env.local
 .env.*.local
 
-# Large media (host externally)
-public/reels/videos/
-public/stories/*.mp4
+# Reel videos (served via YouTube — no need to host locally)
+public/reels/
+dist/reels/
 
 # Vite
 vite.config.ts.timestamp-*
