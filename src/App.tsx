@@ -2,6 +2,7 @@ import { useState } from "react";
 import { createBrowserRouter, RouterProvider, Navigate, ScrollRestoration } from "react-router-dom";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
+import CaseStudies from "./pages/CaseStudies";
 import LoadingScreen from "@/components/shared/LoadingScreen";
 
 function WithScroll({ children }: { children: React.ReactNode }) {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/portfolio/:category",
     element: <WithScroll><Portfolio /></WithScroll>
+  },
+  {
+    path: "/case-studies",
+    element: <WithScroll><CaseStudies /></WithScroll>
   }
 ]);
 

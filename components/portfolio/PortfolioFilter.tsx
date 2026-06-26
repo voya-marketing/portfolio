@@ -5,7 +5,6 @@ import PostCategoryGrid from "@/components/portfolio/PostCategoryGrid";
 import PostsGrid from "@/components/portfolio/PostsGrid";
 import ReelCategoryGrid from "@/components/portfolio/ReelCategoryGrid";
 import ReelsGrid from "@/components/portfolio/ReelsGrid";
-import StoryCategoryGrid from "@/components/portfolio/StoryCategoryGrid";
 import StoriesGrid from "@/components/portfolio/StoriesGrid";
 import { portfolioCategories, portfolioItems } from "@/data/portfolio";
 
@@ -63,10 +62,7 @@ export default function PortfolioFilter() {
           <PostsGrid />
         </>
       ) : activeCategory === "Stories" ? (
-        <>
-          <StoryCategoryGrid />
-          <StoriesGrid />
-        </>
+        <StoriesGrid />
       ) : (
         <div className="grid gap-x-6 gap-y-16 md:grid-cols-2 xl:grid-cols-3">
           {filteredItems.map((item) => (

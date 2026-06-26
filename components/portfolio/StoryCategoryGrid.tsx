@@ -2,9 +2,7 @@ import { Folder } from "lucide-react";
 import { storyCategories, type StoryCategory } from "@/data/stories";
 
 const categoryEffects: Record<StoryCategory, string[]> = {
-  "Food & Drink": ["🍕", "☕", "🔥"],
-  "Cafe Stories": ["☕", "🥐", "✨"],
-  "Turf Stories": ["🏟️", "⚽", "🌿"]
+  Stories: ["🎬", "✨", "📱"]
 };
 
 const iconPositions = [

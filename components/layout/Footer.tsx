@@ -15,6 +15,9 @@ export default function Footer() {
           <Link className="transition hover:text-voya-royal" to="/portfolio">
             Portfolio
           </Link>
+          <Link className="transition hover:text-voya-royal" to="/case-studies">
+            Case Studies
+          </Link>
           <a className="transition hover:text-voya-royal" href="mailto:voyamarketing3@gmail.com">
             Inquiry
           </a>

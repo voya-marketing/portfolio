@@ -5,7 +5,8 @@ import { Menu, X } from "lucide-react";
 const links = [
   { label: "Reels", href: "/portfolio/reels" },
   { label: "Posts", href: "/portfolio/posts" },
-  { label: "Stories", href: "/portfolio/stories" }
+  { label: "Stories", href: "/portfolio/stories" },
+  { label: "Case Studies", href: "/case-studies" }
 ];
 
 export default function Navbar() {

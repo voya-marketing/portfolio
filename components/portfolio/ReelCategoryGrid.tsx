@@ -4,13 +4,17 @@ import { reelCategories } from "@/data/reels";
 const categoryEffects: Record<(typeof reelCategories)[number], string[]> = {
   "Grand Opening": ["\uD83C\uDF89", "\uD83D\uDCE3", "\u2728"],
   Montage: ["\uD83C\uDFAC", "\u2702", "\uD83C\uDF9E"],
+  Cinematic: ["\uD83C\uDFA5", "\uD83C\uDF9E", "\uD83C\uDFAD"],
+  Conceptual: ["\uD83D\uDCA1", "\uD83E\uDDE0", "\uD83D\uDCD0"],
   Funny: ["\uD83D\uDE02", "\uD83E\uDD23", "\uD83D\uDE04"],
-  "Music Based": ["\uD83C\uDFB5", "\uD83C\uDFA7", "\uD83D\uDD0A"],
-  "AI Based Reel": ["\uD83E\uDD16", "\u2699", "\u2728"],
   "Meme Based": ["\uD83D\uDE06", "\uD83D\uDD25", "\uD83D\uDCAC"],
-  "Conceptual reels": ["\uD83D\uDCA1", "\uD83E\uDDE0", "\uD83D\uDCD0"],
   "Speed Ramp": ["\u26A1", "\uD83D\uDE80", "\uD83D\uDCA8"],
-  Cinematic: ["\uD83C\uDFA5", "\uD83C\uDF9E", "\uD83C\uDFAD"]
+  "AI Based": ["\uD83E\uDD16", "\u2699", "\u2728"],
+  "Music Based": ["\uD83C\uDFB5", "\uD83C\uDFA7", "\uD83D\uDD0A"],
+  Product: ["\uD83D\uDCE6", "\uD83D\uDED2", "\u2B50"],
+  Review: ["\u2B50", "\uD83D\uDCDD", "\uD83D\uDC4D"],
+  Informative: ["\uD83D\uDCDA", "\u2139", "\uD83E\uDDFE"],
+  "Marketing Concept": ["\uD83D\uDCC8", "\uD83C\uDFAF", "\uD83D\uDCA1"]
 };
 
 const iconPositions = [
