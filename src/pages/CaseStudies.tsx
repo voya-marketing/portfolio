@@ -8,7 +8,7 @@ import MagneticButton from "@/components/shared/MagneticButton";
 import SectionTitle from "@/components/shared/SectionTitle";
 import { sortedCaseStudies } from "@/data/caseStudies";
 
-const CONTACT_EMAIL = "mailto:voyamarketing3@gmail.com";
+const CONTACT_EMAIL = "mailto:info@voyamarketing.in";
 
 export default function CaseStudies() {
   return (
@@ -44,7 +44,7 @@ export default function CaseStudies() {
       </div>
 
       {/* ── HERO ── */}
-      <section className="relative overflow-hidden px-6 pb-16 pt-36 md:px-20 md:pb-24 md:pt-44">
+      <section className="relative overflow-hidden px-6 pb-16 pt-44 md:px-20 md:pb-24 md:pt-44">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(0,85,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(0,85,255,0.06)_1px,transparent_1px)] bg-[size:96px_96px] opacity-60" />
         <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-voya-royal/10 to-transparent" />
         <div className="relative mx-auto max-w-[1440px]">

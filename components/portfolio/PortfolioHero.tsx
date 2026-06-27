@@ -23,7 +23,7 @@ export default function PortfolioHero() {
             A premium portfolio for short-form reels, social posts, and story
             sequences built for modern brand attention.
           </p>
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-10 grid grid-cols-2 gap-3 [&>a]:w-full [&>a]:justify-center [&>a]:gap-2 [&>a]:whitespace-nowrap [&>a]:px-3 [&>a]:text-[10px] [&>a]:tracking-[0.1em] sm:flex sm:flex-row sm:gap-4 sm:[&>a]:w-auto sm:[&>a]:gap-3 sm:[&>a]:whitespace-normal sm:[&>a]:px-6 sm:[&>a]:text-[11px] sm:[&>a]:tracking-[0.2em]">
             <MagneticButton href="#selects">Explore Selects</MagneticButton>
             <MagneticButton href="/portfolio/reels" variant="secondary">
               View Library

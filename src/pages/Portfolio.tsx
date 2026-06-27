@@ -7,7 +7,7 @@ export default function Portfolio() {
   return (
     <main className="min-h-screen bg-voya-black text-slate-950">
       <Navbar />
-      <section className="mx-auto max-w-[1440px] px-6 pb-16 pt-36 md:px-20 md:pb-24 md:pt-44">
+      <section className="mx-auto max-w-[1440px] px-6 pb-16 pt-44 md:px-20 md:pb-24 md:pt-44">
         <SectionTitle
           eyebrow="Portfolio Library"
           title="A curated archive of reels, posts, and stories."
