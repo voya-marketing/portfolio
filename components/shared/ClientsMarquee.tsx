@@ -46,11 +46,9 @@ export default function ClientsMarquee() {
         Trusted By
       </h3>
 
-      <div className="relative space-y-3 md:space-y-5">
-        {/* Edge fades — chips dissolve into the background at both ends. */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#0a0a0a] to-transparent md:w-40" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#0a0a0a] to-transparent md:w-40" />
-
+      {/* Narrow mask fades chips into the bg only at the very edges — smooth,
+          and (unlike a dark overlay) it never greys the white logo circles. */}
+      <div className="space-y-3 [-webkit-mask-image:linear-gradient(to_right,transparent,black_28px,black_calc(100%_-_28px),transparent)] [mask-image:linear-gradient(to_right,transparent,black_28px,black_calc(100%_-_28px),transparent)] md:space-y-5">
         <Row />
         <Row reverse />
       </div>
