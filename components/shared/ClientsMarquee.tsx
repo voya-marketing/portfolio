@@ -55,7 +55,8 @@ function Row({ reverse = false }: Readonly<{ reverse?: boolean }>) {
               <img
                 src={client.logo}
                 alt=""
-                loading="lazy"
+                loading="eager"
+                decoding="async"
                 className="size-full scale-125 object-contain"
               />
             ) : null}
