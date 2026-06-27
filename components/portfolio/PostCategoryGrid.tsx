@@ -22,7 +22,7 @@ function categoryId(category: PostCategory) {
 
 export default function PostCategoryGrid() {
   return (
-    <div className="mb-14 grid gap-x-6 gap-y-7 overflow-visible sm:grid-cols-2 lg:grid-cols-3">
+    <div className="mb-14 hidden gap-x-6 gap-y-7 overflow-visible md:grid md:grid-cols-2 lg:grid-cols-3">
       {postCategories.map((category) => (
         <a
           key={category}

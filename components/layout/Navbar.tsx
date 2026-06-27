@@ -10,9 +10,9 @@ const links = [
 export default function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-voya-border bg-white/85 text-slate-950 backdrop-blur-xl">
-      <div className="mx-auto flex h-24 max-w-[1440px] items-center justify-between px-6 md:px-20">
+      <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 md:h-24 md:px-20">
         <Link to="/" className="flex items-center">
-          <img src="/voya_logo_blue.svg" alt="VOYA Marketing" className="h-12 w-auto object-contain drop-shadow-sm" />
+          <img src="/voya_logo_blue.svg" alt="VOYA Marketing" className="h-11 w-auto object-contain drop-shadow-sm md:h-12" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary navigation">
@@ -36,7 +36,7 @@ export default function Navbar() {
       </div>
 
       <nav
-        className="grid grid-cols-4 gap-2 border-t border-voya-border px-4 py-3 md:hidden"
+        className="grid grid-cols-4 gap-2 border-t border-voya-border px-4 py-2.5 md:hidden"
         aria-label="Mobile navigation"
       >
         {links.map((link) => (

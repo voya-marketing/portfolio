@@ -16,21 +16,21 @@ export default function CaseStudies() {
       <Navbar />
 
       {/* ── COMING SOON OVERLAY ── */}
-      <div className="fixed inset-0 z-40 flex items-center justify-center overflow-y-auto bg-white/70 px-6 pb-12 pt-36 backdrop-blur-xl md:p-0">
+      <div className="fixed inset-0 z-40 flex items-start justify-center overflow-y-auto bg-white/70 px-6 pb-12 pt-48 backdrop-blur-xl md:items-center md:p-0">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.2, 0.8, 0.2, 1] }}
           className="mx-auto max-w-lg px-8 text-center"
         >
-          <div className="mx-auto mb-8 flex size-16 items-center justify-center border border-voya-border bg-voya-surface text-voya-royal shadow-[0_18px_50px_rgba(0,85,255,0.12)]">
+          <div className="mx-auto mb-6 flex size-14 items-center justify-center border border-voya-border bg-voya-surface text-voya-royal shadow-[0_18px_50px_rgba(0,85,255,0.12)] md:mb-8 md:size-16">
             <Wrench aria-hidden="true" size={26} />
           </div>
           <p className="font-mono text-[11px] uppercase tracking-[0.32em] text-voya-electric">
             Coming Soon
           </p>
           <span className="mx-auto mt-5 block h-px w-16 bg-voya-royal" />
-          <h2 className="mt-6 font-display text-4xl font-black leading-[1.02] md:text-5xl">
+          <h2 className="mt-6 font-display text-3xl font-black leading-[1.05] md:text-5xl md:leading-[1.02]">
             We&apos;re building this page
           </h2>
           <p className="mx-auto mt-5 max-w-sm text-base leading-7 text-voya-muted">
