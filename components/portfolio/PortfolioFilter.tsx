@@ -29,7 +29,7 @@ export default function PortfolioFilter() {
   return (
     <div>
       <nav
-        className="mb-12 flex w-fit flex-wrap gap-1 rounded-full border border-blue-100 bg-white/85 p-1.5 shadow-[0_18px_48px_rgba(0,85,255,0.1)] backdrop-blur-xl"
+        className="mb-12 flex w-full gap-1 rounded-full border border-blue-100 bg-white/85 p-1.5 shadow-[0_18px_48px_rgba(0,85,255,0.1)] backdrop-blur-xl sm:w-fit"
         aria-label="Portfolio filters"
       >
         {portfolioCategories.map((category) => {
@@ -39,7 +39,7 @@ export default function PortfolioFilter() {
             <Link
               key={category}
               to={`/portfolio/${categorySlug}`}
-              className={`rounded-full px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] transition ${
+              className={`flex-1 rounded-full px-2 py-2.5 text-center font-mono text-[10px] uppercase tracking-[0.12em] transition sm:flex-none sm:px-5 sm:py-3 sm:text-[11px] sm:tracking-[0.18em] ${
                 isActive
                   ? "bg-gradient-to-r from-voya-royal to-voya-electric text-white shadow-[0_12px_28px_rgba(0,85,255,0.22)]"
                   : "text-slate-600 hover:bg-blue-50 hover:text-voya-royal"
