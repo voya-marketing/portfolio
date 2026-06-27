@@ -16,7 +16,7 @@ export default function CaseStudies() {
       <Navbar />
 
       {/* ── COMING SOON OVERLAY ── */}
-      <div className="fixed inset-0 z-40 flex items-center justify-center bg-white/70 backdrop-blur-xl">
+      <div className="fixed inset-0 z-40 flex items-center justify-center overflow-y-auto bg-white/70 px-6 pb-12 pt-36 backdrop-blur-xl md:p-0">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
