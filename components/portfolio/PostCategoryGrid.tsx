@@ -22,12 +22,12 @@ function categoryId(category: PostCategory) {
 
 export default function PostCategoryGrid() {
   return (
-    <div className="mb-14 hidden gap-x-6 gap-y-7 overflow-visible md:grid md:grid-cols-2 lg:grid-cols-3">
+    <div className="mb-14 grid grid-cols-3 gap-x-2 gap-y-3 overflow-visible md:gap-x-6 md:gap-y-7">
       {postCategories.map((category) => (
         <a
           key={category}
           href={`#${categoryId(category)}`}
-          className="post-category-card group relative flex min-h-20 items-center overflow-visible rounded-lg border border-blue-100 bg-slate-100 px-6 text-slate-950 grayscale transition duration-300 hover:grayscale-0 hover:-translate-y-1 hover:border-voya-royal hover:bg-blue-50 hover:shadow-[0_14px_35px_rgba(0,85,255,0.12)]"
+          className="post-category-card group relative flex min-h-20 items-center justify-center overflow-visible rounded-lg border border-blue-100 bg-slate-100 px-2 py-3 text-slate-950 grayscale transition duration-300 hover:grayscale-0 hover:-translate-y-1 hover:border-voya-royal hover:bg-blue-50 hover:shadow-[0_14px_35px_rgba(0,85,255,0.12)] md:justify-start md:px-6 md:py-0"
         >
           {categoryEffects[category].map((icon, index) => (
             <span
@@ -39,11 +39,11 @@ export default function PostCategoryGrid() {
             </span>
           ))}
 
-          <span className="relative z-10 flex min-w-0 items-center gap-4">
+          <span className="relative z-10 flex min-w-0 flex-col items-center gap-1.5 text-center md:flex-row md:gap-4 md:text-left">
             <span className="inline-flex size-8 shrink-0 items-center justify-center text-slate-700 transition duration-300 group-hover:-rotate-6 group-hover:scale-110 group-hover:text-voya-royal">
               <Folder aria-hidden="true" size={26} fill="currentColor" strokeWidth={1.5} />
             </span>
-            <span className="text-base font-semibold leading-tight md:text-lg">{category}</span>
+            <span className="whitespace-nowrap text-xs font-semibold leading-tight md:whitespace-normal md:text-lg">{category}</span>
           </span>
         </a>
       ))}
