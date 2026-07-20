@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { createBrowserRouter, RouterProvider, Navigate, ScrollRestoration } from "react-router-dom";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
@@ -39,11 +38,9 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-
   return (
     <>
-      {loading && <LoadingScreen onDone={() => setLoading(false)} />}
+      <LoadingScreen />
       <RouterProvider router={router} />
     </>
   );

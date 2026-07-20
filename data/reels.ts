@@ -13,7 +13,8 @@ export const reelCategories = [
   "Product",
   "Review",
   "Informative",
-  "Marketing Concept"
+  "Marketing Concept",
+  "Personal Branding"
 ] as const;
 
 export type ReelCategory = (typeof reelCategories)[number];
@@ -44,7 +45,8 @@ const sources: { folder: string; category: ReelCategory; count: number }[] = [
   { folder: "product_reels", category: "Product", count: 2 },
   { folder: "review_reels", category: "Review", count: 3 },
   { folder: "Informative_reels", category: "Informative", count: 2 },
-  { folder: "marketing_concept_reels", category: "Marketing Concept", count: 2 }
+  { folder: "marketing_concept_reels", category: "Marketing Concept", count: 2 },
+  { folder: "personal_branding_reels", category: "Personal Branding", count: 3 }
 ];
 
 function slugBase(folder: string) {

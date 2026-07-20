@@ -14,7 +14,8 @@ const categoryEffects: Record<(typeof reelCategories)[number], string[]> = {
   Product: ["\uD83D\uDCE6", "\uD83D\uDED2", "\u2B50"],
   Review: ["\u2B50", "\uD83D\uDCDD", "\uD83D\uDC4D"],
   Informative: ["\uD83D\uDCDA", "\u2139", "\uD83E\uDDFE"],
-  "Marketing Concept": ["\uD83D\uDCC8", "\uD83C\uDFAF", "\uD83D\uDCA1"]
+  "Marketing Concept": ["\uD83D\uDCC8", "\uD83C\uDFAF", "\uD83D\uDCA1"],
+  "Personal Branding": ["\uD83D\uDC64", "\uD83C\uDF1F", "\u2728"]
 };
 
 const iconPositions = [
