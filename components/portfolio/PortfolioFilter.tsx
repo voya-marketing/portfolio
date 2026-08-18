@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import PortfolioCard from "@/components/portfolio/PortfolioCard";
 import PostCategoryGrid from "@/components/portfolio/PostCategoryGrid";
 import PostsGrid from "@/components/portfolio/PostsGrid";
+import FeaturedReels from "@/components/portfolio/FeaturedReels";
 import ReelCategoryGrid from "@/components/portfolio/ReelCategoryGrid";
 import ReelsGrid from "@/components/portfolio/ReelsGrid";
 import StoriesGrid from "@/components/portfolio/StoriesGrid";
@@ -53,6 +54,7 @@ export default function PortfolioFilter() {
 
       {activeCategory === "Reels" ? (
         <>
+          <FeaturedReels />
           <ReelCategoryGrid />
           <ReelsGrid />
         </>

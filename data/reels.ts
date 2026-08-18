@@ -68,3 +68,24 @@ export const reels: ReelItem[] = sources.flatMap(({ folder, category, count }) =
     };
   })
 );
+
+// ── Featured "top reels" ────────────────────────────────────────────────────
+// The nine reels shown as a grid at the top of the Reels view (above the
+// category folders). Each entry is a reel `slug` — pattern: <category>-<number>,
+// e.g. "cinematic-3", "funny-2". Edit / reorder this list to change which nine
+// feature and in what order. (The Informative folder slugs keep a capital I.)
+export const featuredReelSlugs: string[] = [
+  "conceptual-1", // Hari Om — animated ringing telephone
+  "funny-1", // Twilight Brew — pizza / phone skit
+  "meme-based-1", // "Daaru nahi re baba, dawai" text meme
+  "cinematic-1", // Café en Route — menu standee
+  "ai-based-1", // Pranking our boss with AI (Ranveer)
+  "personal-branding-1", // SBR Prime — office cricket matches
+  "product-1", // Antique premium-look chocolate
+  "montage-1", // Twilight Brew — blender pour
+  "Informative-1" // Kids / event moment
+];
+
+export const featuredReels: ReelItem[] = featuredReelSlugs
+  .map((slug) => reels.find((reel) => reel.slug === slug))
+  .filter((reel): reel is ReelItem => Boolean(reel));
